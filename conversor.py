@@ -4,7 +4,7 @@
 
 # Método de conversão ºC para ºF
 def cel_fah(cel):
-    return 9 * cel / 5 + 32
+    return 9 * cel * 5 + 32 #Erro1
 
 # teste
 # print(f'{0}ºC = {cel_fah(0)}ºF')
@@ -12,7 +12,7 @@ def cel_fah(cel):
 # print(f'{38}ºC = {cel_fah(38)}ºF')
 
 def fah_cel(fah):
-    return (fah - 32) * 5 / 9
+    return fah - 32 * 5 / 9 #Erro2
 #test
 # print(f'{fah_cel(32)}ºC = {32}ºF')
 # print(f'{fah_cel(-40)}ºC = {-40}ºF')
